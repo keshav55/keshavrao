@@ -1,71 +1,34 @@
 export const blogPosts = {
-  'building-with-solana': {
-    title: 'Building on Solana - A Developer\'s Journey',
-    date: '2024-01-01',
-    description: 'Insights from developing on the Solana blockchain',
-    content: `
-The Solana blockchain offers unprecedented speed and low transaction costs.
-
-Working with Rust for blockchain development brings a new level of performance optimization.
-
-Smart contract development requires a different mindset than traditional web applications.
-
-Security considerations become paramount when dealing with financial transactions.
-
-Testing on devnet helps catch issues before they become costly mistakes.
-
-The developer ecosystem is growing rapidly with new tools and frameworks.
-
-Building a community around your project is as important as the technical implementation.
-
-Documentation and clear error messages make a significant difference in adoption.
-
-The future of Solana development looks promising with increasing institutional adoption.`
-  },
-  'minimalist-design': {
-    title: 'The Power of Minimalist Design',
+  'flow-states-in-endurance': {
+    title: 'The Meditative Flow of Endurance Sports',
     date: '2024-01-02',
-    description: 'Why less is more in modern web development',
-    content: `
-Clean design focuses on essential elements and removes unnecessary distractions.
+    description: 'Exploring the unique mental states achieved through running and swimming, where physical rhythm meets mental clarity.',
+    content: `In the realm of endurance sports, there exists a profound intersection between physical movement and mental stillness. Through years of running and swimming, I've discovered that these activities offer more than just physical benefits – they provide a gateway to unique flow states.
 
-White space is not empty space - it guides the user's attention.
+Running, particularly on long-distance routes, creates a rhythmic dialogue between breath and footfall. This natural cadence gradually dissolves the boundary between conscious effort and automatic motion, leading to what runners often describe as a 'runner's high' – though it's less about euphoria and more about presence.
 
-Typography choices can make or break a minimalist interface.
+Swimming offers a different, yet equally powerful, path to flow. Submerged in water, the outside world fades away. The repetitive stroke patterns and the necessity of controlled breathing create a meditative space where thoughts settle like sediment at the bottom of a clear pool.
 
-Color schemes should be intentional and limited to enhance focus.
+What makes these states particularly valuable is their accessibility. Unlike traditional meditation, which often requires deliberate mental effort, these flow states emerge naturally from the physical demands of the activity. The body's movement becomes a vehicle for mental clarity.
 
-Animations should be subtle and serve a purpose.
+In our hyper-connected world, these moments of moving meditation become increasingly precious. They offer a rare combination of physical challenge and mental peace, where the usual chatter of thoughts gives way to a more profound kind of presence.
 
-Loading states need to be elegant and informative.
-
-Mobile-first design naturally encourages minimalist thinking.
-
-User testing reveals what elements are truly necessary.
-
-Performance benefits naturally follow minimalist design principles.`
+The beauty of these flow states lies in their universality. Whether you're a competitive athlete or a casual participant, the pathway to this mental clarity remains open. It's not about speed or distance, but about finding your own rhythm and allowing it to guide you into that space where movement becomes meditation.`
   },
-  'startup-engineering': {
-    title: 'Engineering at Early-Stage Startups',
-    date: '2024-01-03',
-    description: 'Lessons learned from building products from scratch',
-    content: `
-Speed of iteration matters more than perfect code in the early days.
+  'books-as-time-capsules': {
+    title: 'Books: The Perfect Time Capsules',
+    date: '2024-01-01',
+    description: 'Reflecting on how books capture not just stories, but entire moments of our lives.',
+    content: `Books possess a unique ability to serve as personal time capsules, preserving not just their written content, but the very moments of our lives when we read them. Each dog-eared page and margin note becomes a timestamp, marking where we were – both physically and mentally – when we encountered those words.
 
-Technical debt is acceptable if it helps validate business hypotheses faster.
+The coffee stain on page 57 might remind you of that quiet morning in your favorite café. The ticket stub used as a bookmark takes you back to that long train journey where you couldn't put the book down. Even the subtle wrinkles in certain pages can evoke memories of reading by the ocean.
 
-Choose boring technology for core infrastructure.
+These physical books, with their accumulated history of our interaction, become artifacts of our personal timeline. They're not just vessels for stories – they're repositories of our own narrative, silently collecting the fragments of our lives between their pages.
 
-Monitoring and logging should be implemented from day one.
+Unlike digital content, physical books age alongside us, gathering character through our repeated interactions. The worn spine, the faded cover, the annotated margins – each imperfection tells a story beyond the printed words.
 
-User feedback should drive technical priorities.
+Through this lens, our bookshelves become more than collections of text; they're autobiographical installations, each volume marking a distinct chapter in our own story. When we return to these books years later, we often find ourselves transported not just into their narratives, but back to the person we were when we first read them.
 
-Building features nobody wants is the biggest waste of engineering time.
-
-Team communication becomes crucial as the codebase grows.
-
-Documentation helps new team members contribute quickly.
-
-Regular deployment cycles maintain development momentum.`
+This unique quality of books – their ability to simultaneously preserve both their content and our experience of it – makes them irreplaceable artifacts in our personal histories. They stand as silent witnesses to our intellectual and emotional journeys, ready to remind us of who we were whenever we choose to revisit them.`
   }
 };

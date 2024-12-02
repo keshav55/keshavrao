@@ -17,7 +17,7 @@ function Home() {
       <div className="max-w-2xl mx-auto">
         <header className="mb-16">
           <h1 className="text-4xl font-bold mb-4">Keshav Rao</h1>
-          <p className="text-xl text-gray-400 mb-4">Thoughts on engineering, blockchain, and product development.</p>
+          <p className="text-xl text-gray-400 mb-4">Thoughts and ideas.</p>
           <CurrentProjects />
         </header>
 
