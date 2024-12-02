@@ -1,48 +1,48 @@
 export const blogPosts = {
-  'flow-states-in-endurance': {
-    title: 'The Meditative Flow of Endurance Sports',
+  'flow-states': {
+    title: 'Initial Friction, Then Flow',
     date: '2024-01-02',
-    description: 'Exploring the unique mental states achieved through running and swimming.',
-    content: `There's something magical about the rhythm of feet hitting pavement or arms cutting through water.
+    description: 'On swimming, running, and finding rhythm.',
+    content: `The first few minutes of swimming and running are always painful.
 
-The first mile is always the hardest, as your body resists the transition from stillness to motion.
+The initial inertia feels like arriving at a music festival, waiting for the beats to settle in.
 
-But then something shifts – your breathing finds its pattern, and your mind begins to quiet.
+You resist, then adapt, then flow.
 
-In the pool, each lap becomes a meditation, the world above the surface fading into peaceful irrelevance.
+Your mind wanders while your body moves on autopilot.
 
-The repetitive motion of swimming creates a cocoon of solitude, where thoughts float away like bubbles.
+The resistance fades as rhythm takes over.
 
-Running brings its own form of meditation, where the steady beat of footsteps becomes a drum for your thoughts.
+It's similar to deep work - the beginning is the hardest part.
 
-Some of my clearest insights have come during these moments of physical flow.
+Once you're in, you're in.
 
-The beauty is in the simplicity – just you, your breath, and the steady rhythm of motion.
+Time becomes fluid.
 
-Time seems to stretch and compress in these states, minutes flowing like water through your fingers.
+Thoughts float freely.
 
-Your body moves on autopilot while your mind finds rare moments of clarity.
+Everything aligns.
 
-These moving meditations have become my favorite way to process complex thoughts.
+It's a beautiful feeling.
 
-The endorphins are just a bonus to the mental clarity these activities bring.`
+The state becomes addictive.`
   },
-  'books-as-time-capsules': {
-    title: 'Books: The Perfect Time Capsules',
+  'books-memory': {
+    title: 'Books Hold Time Still',
     date: '2024-01-01',
-    description: 'How books preserve moments of our lives between their pages.',
-    content: `Books are more than just stories – they're time machines to specific moments in our lives.
+    description: 'Finding past versions of myself in old books.',
+    content: `I found my old books during Thanksgiving at home.
 
-That coffee-stained page reminds me of a rainy morning in my favorite café.
+Each page triggered flashbacks to different parts of my life.
 
-Dog-eared corners mark not just pages, but periods of my life.
+Margin notes revealed how I used to think about the future.
 
-The margin notes become a dialogue between my past and present selves.
+It's fascinating how books preserve not just their content, but our past selves.
 
-Reading an old book is like opening a letter from your younger self.
+These pages hold both stories and memories.
 
-The physical wear of a beloved book tells its own story of time and touch.
+It's a beautiful reflection of time passing.
 
-These paper time capsules hold more memories than just the words on their pages.`
+The connection between then and now feels surreal.`
   }
 };
