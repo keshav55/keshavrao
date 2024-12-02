@@ -1,91 +1,71 @@
 export const blogPosts = {
-  'post-1': {
-    title: 'The Architecture of Digital Minimalism',
-    date: '2027.02',
+  'building-with-solana': {
+    title: 'Building on Solana - A Developer\'s Journey',
+    date: '2024-01-01',
+    description: 'Insights from developing on the Solana blockchain',
     content: `
-# The Architecture of Digital Minimalism
+The Solana blockchain offers unprecedented speed and low transaction costs.
 
-In the ever-evolving landscape of digital design, minimalism has emerged not just as an aesthetic choice, but as a fundamental approach to solving complex problems. This exploration delves into how digital minimalism shapes our interaction with technology in 2027.
+Working with Rust for blockchain development brings a new level of performance optimization.
 
-## The Essence of Digital Minimalism
+Smart contract development requires a different mindset than traditional web applications.
 
-Digital minimalism isn't about stripping away functionality—it's about finding the perfect balance between capability and simplicity. In an age where technology permeates every aspect of our lives, this balance becomes increasingly crucial.
+Security considerations become paramount when dealing with financial transactions.
 
-Consider these key principles:
+Testing on devnet helps catch issues before they become costly mistakes.
 
-### 1. Intentional Design
-- Every element serves a purpose
-- Nothing is superfluous or decorative without reason
-- Interaction patterns are intuitive and consistent
+The developer ecosystem is growing rapidly with new tools and frameworks.
 
-### 2. Information Hierarchy
-- Content is king, but context is kingdom
-- Visual hierarchy guides users naturally
-- White space is used as a design element
+Building a community around your project is as important as the technical implementation.
 
-\`\`\`javascript
-// Example of minimalist component design
-const MinimalButton = ({ onClick, children }) => (
-  <button
-    onClick={onClick}
-    className="px-4 py-2 bg-transparent border-none"
-  >
-    {children}
-  </button>
-);
-\`\`\`
+Documentation and clear error messages make a significant difference in adoption.
 
-## The Impact on User Experience
-
-When we embrace digital minimalism, we create spaces that:
-- Reduce cognitive load
-- Increase focus and productivity
-- Enhance information retention
-- Create memorable experiences
-
-> "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away." - Antoine de Saint-Exupéry
-`
+The future of Solana development looks promising with increasing institutional adoption.`
   },
-  'post-2': {
-    title: 'Structured Chaos: A New Framework',
-    date: '2027.02',
+  'minimalist-design': {
+    title: 'The Power of Minimalist Design',
+    date: '2024-01-02',
+    description: 'Why less is more in modern web development',
     content: `
-# Structured Chaos: A New Framework
+Clean design focuses on essential elements and removes unnecessary distractions.
 
-The concept of structured chaos might seem paradoxical at first glance, but it's becoming increasingly relevant in our approach to digital experiences. This post explores how embracing controlled chaos leads to breakthrough innovations.
+White space is not empty space - it guides the user's attention.
 
-## Understanding Structured Chaos
+Typography choices can make or break a minimalist interface.
 
-At its core, structured chaos is about creating systems that are flexible enough to adapt to uncertainty while maintaining core stability. It's the perfect balance between order and disorder.
+Color schemes should be intentional and limited to enhance focus.
 
-\`\`\`python
-def embrace_chaos(system):
-    while system.is_evolving():
-        # Introduce controlled randomness
-        variation = generate_random_variation()
-        
-        # Apply constraints to maintain structure
-        if is_within_bounds(variation):
-            system.adapt(variation)
-            
-        # Learn from the outcome
-        system.evaluate_and_adjust()
-\`\`\`
+Animations should be subtle and serve a purpose.
 
-## Key Principles
+Loading states need to be elegant and informative.
 
-### 1. Adaptive Systems
-- Build for change, not permanence
-- Create flexible architectures
-- Embrace uncertainty as a feature
+Mobile-first design naturally encourages minimalist thinking.
 
-### 2. Controlled Experimentation
-- Test boundaries systematically
-- Learn from controlled failures
-- Iterate with purpose
+User testing reveals what elements are truly necessary.
 
-> "In all chaos there is a cosmos, in all disorder a secret order." - Carl Jung
-`
+Performance benefits naturally follow minimalist design principles.`
+  },
+  'startup-engineering': {
+    title: 'Engineering at Early-Stage Startups',
+    date: '2024-01-03',
+    description: 'Lessons learned from building products from scratch',
+    content: `
+Speed of iteration matters more than perfect code in the early days.
+
+Technical debt is acceptable if it helps validate business hypotheses faster.
+
+Choose boring technology for core infrastructure.
+
+Monitoring and logging should be implemented from day one.
+
+User feedback should drive technical priorities.
+
+Building features nobody wants is the biggest waste of engineering time.
+
+Team communication becomes crucial as the codebase grows.
+
+Documentation helps new team members contribute quickly.
+
+Regular deployment cycles maintain development momentum.`
   }
-  // Add more posts here
 };
