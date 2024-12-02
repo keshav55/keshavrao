@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { blogPosts } from '../data/blogPosts';
 import SEO from '../components/SEO';
 import SocialLinks from '../components/SocialLinks';
+import CurrentProjects from '../components/CurrentProjects';
 
 function Home() {
   const posts = Object.entries(blogPosts).map(([id, post]) => ({
@@ -16,11 +17,11 @@ function Home() {
       <div className="max-w-2xl mx-auto">
         <header className="mb-16">
           <h1 className="text-4xl font-bold mb-4">Keshav Rao</h1>
-          <p className="text-xl text-gray-400 mb-6">Thoughts on engineering, blockchain, and product development.</p>
-          <SocialLinks />
+          <p className="text-xl text-gray-400 mb-4">Thoughts on engineering, blockchain, and product development.</p>
+          <CurrentProjects />
         </header>
 
-        <div className="space-y-12">
+        <div className="space-y-12 mb-16">
           {posts.map((post) => (
             <article key={post.id} className="border-b border-gray-800 pb-8">
               <Link to={`/blog/${post.id}`} className="block group">
@@ -35,6 +36,10 @@ function Home() {
             </article>
           ))}
         </div>
+
+        <footer className="py-8 border-t border-gray-800">
+          <SocialLinks />
+        </footer>
       </div>
     </div>
   );
