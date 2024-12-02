@@ -1,15 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { blogPosts } from '../data/blogPosts';
 import SEO from '../components/SEO';
 import SocialLinks from '../components/SocialLinks';
 import CurrentProjects from '../components/CurrentProjects';
+import { getSortedPostsData } from '../utils/posts';
 
 function Home() {
-  const posts = Object.entries(blogPosts).map(([id, post]) => ({
-    id,
-    ...post
-  })).sort((a, b) => new Date(b.date) - new Date(a.date));
+  const posts = getSortedPostsData();
 
   return (
     <div className="min-h-screen bg-black text-white p-8">
@@ -29,8 +26,8 @@ function Home() {
                   {post.title}
                 </h2>
                 <div className="text-gray-500 mb-4">{post.date}</div>
-                <p className="text-gray-400">
-                  {post.description}
+                <p className="text-gray-400 whitespace-pre-line">
+                  {post.content}
                 </p>
               </Link>
             </article>

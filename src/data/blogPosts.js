@@ -3,7 +3,8 @@ export const blogPosts = {
     title: 'Initial Friction, Then Flow',
     date: '2024-01-02',
     description: 'On swimming, running, and finding rhythm.',
-    content: `The first few minutes of swimming and running are always painful.
+    content: `
+The first few minutes of swimming and running are always painful.
 
 The initial inertia feels like arriving at a music festival, waiting for the beats to settle in.
 
@@ -25,13 +26,15 @@ Everything aligns.
 
 It's a beautiful feeling.
 
-The state becomes addictive.`
+The state becomes addictive.
+    `
   },
   'books-memory': {
     title: 'Books Hold Time Still',
     date: '2024-01-01',
     description: 'Finding past versions of myself in old books.',
-    content: `I found my old books during Thanksgiving at home.
+    content: `
+I found my old books during Thanksgiving at home.
 
 Each page triggered flashbacks to different parts of my life.
 
@@ -43,6 +46,7 @@ These pages hold both stories and memories.
 
 It's a beautiful reflection of time passing.
 
-The connection between then and now feels surreal.`
+The connection between then and now feels surreal.
+    `
   }
 };
