@@ -3,7 +3,15 @@ import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import SocialLinks from '../components/SocialLinks';
 import CurrentProjects from '../components/CurrentProjects';
-import { getSortedPostsData } from '../utils/posts';
+import { getSortedPostsData } from '../data/posts';
+
+function getPreviewContent(content) {
+  // Get first paragraph or first 200 characters
+  const firstParagraph = content.split('\n\n')[0];
+  return firstParagraph.length > 200 
+    ? firstParagraph.slice(0, 200) + '...'
+    : firstParagraph;
+}
 
 function Home() {
   const posts = getSortedPostsData();
@@ -27,7 +35,7 @@ function Home() {
                 </h2>
                 <div className="text-gray-500 mb-4">{post.date}</div>
                 <p className="text-gray-400 whitespace-pre-line">
-                  {post.content}
+                  {getPreviewContent(post.content)}
                 </p>
               </Link>
             </article>

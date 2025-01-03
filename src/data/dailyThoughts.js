@@ -9,6 +9,6 @@ export const dailyThoughts = [
     id: '2024-01-02-2',
     date: '2024-01-02',
     time: '11:15 PM',
-    thought: 'The best ideas come when you're not trying to be profound.'
+    thought: 'The best ideas come when you\'re not trying to be profound.'
   }
 ];
