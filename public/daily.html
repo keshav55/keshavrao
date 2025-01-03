@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raw Thoughts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white min-h-screen">
+    <div class="max-w-2xl mx-auto p-8">
+        <div class="space-y-8" id="thoughts">
+            <!-- Thoughts will be inserted here -->
+        </div>
+    </div>
+
+    <script>
+        const thoughts = [
+            {
+                id: '2024-01-02-1',
+                date: '2024-01-02',
+                time: '10:30 PM',
+                thought: 'Building in public feels different. Raw thoughts → refined ideas.'
+            },
+            {
+                id: '2024-01-02-2',
+                date: '2024-01-02',
+                time: '11:15 PM',
+                thought: 'The best ideas come when you're not trying to be profound.'
+            }
+        ];
+
+        function renderThoughts() {
+            const container = document.getElementById('thoughts');
+            thoughts
+                .sort((a, b) => new Date(b.date + ' ' + b.time) - new Date(a.date + ' ' + a.time))
+                .forEach(thought => {
+                    const thoughtElement = document.createElement('div');
+                    thoughtElement.className = 'border-b border-gray-800 pb-6';
+                    thoughtElement.innerHTML = `
+                        <p class="text-lg mb-2">${thought.thought}</p>
+                        <div class="text-sm text-gray-500">
+                            ${thought.time} · ${thought.date}
+                        </div>
+                    `;
+                    container.appendChild(thoughtElement);
+                });
+        }
+
+        renderThoughts();
+    </script>
+</body>
+</html>

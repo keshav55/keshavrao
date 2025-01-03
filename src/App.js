@@ -4,6 +4,7 @@ import { AnimatePresence } from 'framer-motion';
 import { HelmetProvider } from 'react-helmet-async';
 import Home from './pages/Home';
 import BlogPost from './components/BlogPost';
+import Daily from './pages/Daily';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/blog/:id" element={<BlogPost />} />
+              <Route path="/daily" element={<Daily />} />
             </Routes>
           </AnimatePresence>
         </div>
