@@ -27,7 +27,7 @@ You're thinking: "But I type faster!" Sure. You also browse faster, get distract
 - That callback you forgot
 - The grocery list - dump it all
 
-We're not aiming for Shakespeare here. We're creating space for what matters.
+We're creating space for what matters.
 
 ## 3. The Beverage Ritual
 This isn't just about caffeine. You need one drink while writing. Could be:
@@ -37,7 +37,7 @@ This isn't just about caffeine. You need one drink while writing. Could be:
 - Coffee
 - Chai
 - Milk tea
-- Or occasionally, something classy (you know what I mean)
+- Red wine (occasionally)
 
 The drink is your anchor. It tells your brain: "We're in writing mode now."
 
@@ -50,10 +50,10 @@ Here's where we sync mind to flow state. Simple box breathing:
 - 5 seconds hold
 - Repeat for 1 minute
 
-Try it right now. I'll wait.
+Try it right now. 
 
 ## 5. Free Flow Restaurant Writing
-This is where most people choke. They try to be perfect from the start.
+This is where most people mess up. They try to be perfect from the start.
 Instead:
 
 - Write like you're having a conversation
@@ -83,8 +83,9 @@ AI is a tool, not a crutch. Use it to:
 - Get quick summaries
 - Test ideas
 - Expand perspectives
+- Play around with ideas
 
-But keep your voice. The machine should amplify you, not replace you.
+Keep your voice. 
 
 ## 9. Infinite Drafts
 Now we iterate. But with purpose:
