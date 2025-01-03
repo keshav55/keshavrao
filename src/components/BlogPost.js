@@ -1,13 +1,13 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
-import { blogPosts } from '../data/blogPosts';
+import { posts } from '../data/posts';
 import SEO from './SEO';
 
 function BlogPost() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const post = blogPosts[id];
+  const post = posts.find(p => p.id === id);
 
   if (!post) {
     navigate('/');
