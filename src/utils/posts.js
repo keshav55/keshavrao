@@ -4,7 +4,19 @@ import matter from 'gray-matter';
 
 const postsDirectory = path.join(process.cwd(), 'content/posts');
 
+// Cache for storing parsed posts to avoid repeated disk reads
+let postsCache = null;
+let lastCacheTime = 0;
+const CACHE_TTL = 5 * 60 * 1000; // 5 minutes cache TTL
+
 export function getAllPosts() {
+  const now = Date.now();
+  
+  // Return cached posts if they're still fresh
+  if (postsCache && (now - lastCacheTime) < CACHE_TTL) {
+    return postsCache;
+  }
+
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames
@@ -28,16 +40,24 @@ export function getAllPosts() {
       };
     });
 
-  // Sort posts by date
-  return allPostsData.sort((a, b) => {
+  // Sort posts by date in descending order (newest first)
+  const sortedPosts = allPostsData.sort((a, b) => {
     if (a.date < b.date) {
       return 1;
     } else {
       return -1;
     }
   });
+
+  // Update cache
+  postsCache = sortedPosts;
+  lastCacheTime = now;
+
+  return sortedPosts;
 }
 
+// Get a single post by its slug
+// This doesn't use caching since it's a single file read
 export function getPostBySlug(slug) {
   const fullPath = path.join(postsDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
