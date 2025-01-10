@@ -2,6 +2,7 @@
 title: 'Initial Friction, Then Flow'
 date: '2024-01-02'
 description: 'On swimming, running, and finding rhythm.'
+author: 'Keshav'
 tags: ['flow', 'productivity', 'mindfulness']
 ---
 

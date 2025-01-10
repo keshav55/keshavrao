@@ -2,6 +2,7 @@
 title: 'The Natural Writing Process: 10 Steps to Flow State Creation'
 date: '2024-01-02'
 description: 'A guide to creating sacred writing rituals and achieving flow state in your writing practice.'
+author: 'Keshav'
 tags: ['writing', 'productivity', 'flow-state', 'creativity']
 ---
 
