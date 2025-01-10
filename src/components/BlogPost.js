@@ -61,6 +61,15 @@ function BlogPost() {
       <header className="max-w-2xl mx-auto mb-8">
         <h1 className="text-4xl font-bold mb-4" itemProp="headline">{post.title}</h1>
         <div className="text-gray-400 flex flex-wrap gap-4 items-center">
+          <div className="flex items-center gap-2">
+            <span className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center">
+              {(post.author || 'Keshav Rao').split(' ').map(n => n[0]).join('')}
+            </span>
+            <span itemProp="author" itemScope itemType="https://schema.org/Person">
+              <span itemProp="name">{post.author || 'Keshav Rao'}</span>
+            </span>
+          </div>
+          <span className="text-gray-500">•</span>
           <time dateTime={post.date} itemProp="datePublished" className="text-sm">
             {new Date(post.date).toLocaleDateString('en-US', {
               year: 'numeric',
