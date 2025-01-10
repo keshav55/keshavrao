@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import { posts } from '../data/posts';
 import SEO from './SEO';
+import { FaTwitter, FaLinkedin, FaLink } from 'react-icons/fa';
 
 function BlogPost() {
   const { id } = useParams();
@@ -41,6 +42,24 @@ function BlogPost() {
         '@type': 'ImageObject',
         'url': 'https://keshavrao.vercel.app/logo.png'
       }
+    }
+  };
+
+  const [showShareToast, setShowShareToast] = useState(false);
+  const currentUrl = `https://keshavrao.vercel.app/blog/${id}`;
+  
+  const shareLinks = {
+    twitter: `https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(currentUrl)}`,
+    linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`
+  };
+
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText(currentUrl);
+      setShowShareToast(true);
+      setTimeout(() => setShowShareToast(false), 2000);
+    } catch (err) {
+      console.error('Failed to copy:', err);
     }
   };
 
@@ -111,6 +130,40 @@ function BlogPost() {
         >
           {post.content}
         </ReactMarkdown>
+
+        <div className="flex items-center justify-center gap-4 mt-12 border-t border-gray-800 pt-8">
+          <a
+            href={shareLinks.twitter}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-full hover:bg-gray-800 transition-colors"
+            aria-label="Share on Twitter"
+          >
+            <FaTwitter size={20} />
+          </a>
+          <a
+            href={shareLinks.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-full hover:bg-gray-800 transition-colors"
+            aria-label="Share on LinkedIn"
+          >
+            <FaLinkedin size={20} />
+          </a>
+          <button
+            onClick={copyToClipboard}
+            className="p-2 rounded-full hover:bg-gray-800 transition-colors"
+            aria-label="Copy link"
+          >
+            <FaLink size={20} />
+          </button>
+        </div>
+
+        {showShareToast && (
+          <div className="fixed bottom-4 right-4 bg-gray-800 text-white px-4 py-2 rounded-lg shadow-lg">
+            Link copied to clipboard!
+          </div>
+        )}
       </div>
     </article>
   );
