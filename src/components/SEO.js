@@ -49,8 +49,15 @@ function SEO({ title, description, image, article, canonical, keywords = [] }) {
       {/* Mobile viewport */}
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       
-      {/* Theme color for mobile browsers */}
+      {/* Preconnect to external domains */}
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      
+      {/* Additional SEO meta tags */}
+      <meta name="author" content="Keshav Rao" />
       <meta name="theme-color" content="#000000" />
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
     </Helmet>
   );
 }

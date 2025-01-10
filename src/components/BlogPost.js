@@ -51,56 +51,57 @@ function BlogPost() {
         description={post.description}
         article={true}
         canonical={`https://keshavrao.vercel.app/blog/${id}`}
+        keywords={post.tags || []}
       />
       
       <script type="application/ld+json">
         {JSON.stringify(jsonLd)}
       </script>
       
-      <div className="max-w-2xl mx-auto">
-        <nav aria-label="Back navigation">
-          <button 
-            onClick={() => navigate('/')}
-            className="text-gray-400 hover:text-white mb-12 flex items-center"
-            aria-label="Back to home"
-          >
-            <span className="mr-2" aria-hidden="true">←</span>
-            Back home
-          </button>
-        </nav>
-        
-        <header>
-          <h1 className="text-4xl font-bold mb-4" itemProp="headline">{post.title}</h1>
-          <div className="flex items-center text-gray-500 mb-2">
-            <time dateTime={post.date} itemProp="datePublished">{post.date}</time>
-            {post.author && (
-              <span className="mx-2" itemProp="author" itemScope itemType="https://schema.org/Person">
-                by <span itemProp="name">{post.author}</span>
-              </span>
-            )}
-          </div>
-          <div className="text-gray-400 mb-8">{readingTime} min read</div>
-        </header>
-        
-        <div className="prose prose-invert prose-lg max-w-none" itemProp="articleBody">
-          {post.content.split('\n\n').map((paragraph, index) => (
-            <p key={index} className="mb-6">
-              {paragraph}
-            </p>
-          ))}
-        </div>
-        
-        {post.tags && (
-          <footer className="mt-12">
-            <div className="flex flex-wrap gap-2">
+      <header className="max-w-2xl mx-auto mb-8">
+        <h1 className="text-4xl font-bold mb-4" itemProp="headline">{post.title}</h1>
+        <div className="text-gray-400 flex flex-wrap gap-4 items-center">
+          <time dateTime={post.date} itemProp="datePublished" className="text-sm">
+            {new Date(post.date).toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric'
+            })}
+          </time>
+          <span aria-label="Reading time" className="text-sm">
+            {readingTime} min read
+          </span>
+          {post.tags && (
+            <div className="flex gap-2 flex-wrap">
               {post.tags.map(tag => (
-                <span key={tag} className="px-3 py-1 bg-gray-800 rounded-full text-sm">
+                <span key={tag} className="text-sm bg-gray-800 px-2 py-1 rounded">
                   {tag}
                 </span>
               ))}
             </div>
-          </footer>
-        )}
+          )}
+        </div>
+      </header>
+
+      <div className="prose prose-invert max-w-2xl mx-auto" itemProp="articleBody">
+        <ReactMarkdown
+          components={{
+            img: ({ node, ...props }) => (
+              <img 
+                {...props} 
+                loading="lazy"
+                decoding="async"
+                className="w-full rounded-lg"
+                alt={props.alt || 'Blog post image'}
+              />
+            ),
+            a: ({ node, ...props }) => (
+              <a {...props} target="_blank" rel="noopener noreferrer" />
+            )
+          }}
+        >
+          {post.content}
+        </ReactMarkdown>
       </div>
     </article>
   );
