@@ -3,12 +3,8 @@ import React from 'react';
 const CurrentProjects = () => {
   const projects = [
     {
-      name: 'Atris',
-      url: 'https://atris.ai'
-    },
-    {
-      name: 'Hugo',
-      url: 'https://hugolearn.ai'
+      name: 'Atris Labs',
+      url: 'https://atrislabs.com'
     }
   ];
 

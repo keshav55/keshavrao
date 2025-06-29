@@ -1,0 +1,95 @@
+# LLM Context for keshavrao.com Project
+
+## About Me
+- Building in public, late night coding sessions
+- Interested in flow states, music + tech intersection
+- Writing style: lowercase, raw thoughts, authentic voice
+- Current blog at keshavrao.com
+
+## Current Stack
+- React 18 with Create React App
+- TailwindCSS (minimalist black/white design)
+- React Router v7
+- Framer Motion for animations
+- No TypeScript (yet)
+- No external APIs - static content focused
+
+## Content Philosophy
+- Raw, unpolished thoughts > perfect prose
+- Document the journey, not just outcomes
+- Mix technical depth with personal insights
+- Focus on flow states and creativity
+- Late night building sessions documented
+
+## What I Want to Build
+[DEFINE YOUR NEW PROJECT IDEA HERE]
+- What problem does it solve?
+- Who is it for?
+- What makes it unique?
+- Technical requirements?
+
+## Design Principles
+- Minimalist UI (current site is black/white)
+- Typography-first approach
+- Fast, responsive, accessible
+- Beautiful without being overdone
+
+## Content Areas
+1. Tech & Flow State
+   - Coding sessions and creative energy
+   - Building in public
+   - Tools that enhance flow
+
+2. Music & Technology
+   - DJ sets and coding synergy
+   - Creative process parallels
+   - Building tools for creators
+
+3. Personal Journey
+   - Startup life experiences
+   - Learning in public
+   - Experiments and breakthroughs
+
+## Technical Preferences
+- Start simple, iterate fast
+- 80/20 rule - focus on what matters
+- Ship early, improve often
+- Prefer proven tools over bleeding edge
+- Documentation is part of the build
+
+## Working Style with AI
+- Keep responses to 2-3 bullets max
+- Create hyperspecific tasks
+- Apply 80/20 rule
+- Focus on shipping, not perfection
+
+## Current Pain Points
+- Blog has placeholder content (2027 dates)
+- Two content systems (hardcoded + markdown)
+- Need to decide on content approach
+- Want more interactive features
+
+## Ideas to Explore
+- Interactive writing guide/tool
+- Portfolio with unique twist
+- Music + code visualization
+- Flow state tracker/enhancer
+- Creator tools
+- Something that combines interests
+
+## Questions for New Project
+1. Should it integrate with existing blog or be separate?
+2. What's the MVP we can ship in a week?
+3. How can it showcase both technical and creative sides?
+4. What would make it memorable/shareable?
+
+---
+
+NEXT STEPS:
+1. Define the specific project idea
+2. Outline core features (MVP)
+3. Choose tech stack
+4. Create implementation plan
+5. Start building
+
+Remember: Ship fast, iterate based on feedback, keep it authentic. 

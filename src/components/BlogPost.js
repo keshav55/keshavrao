@@ -8,6 +8,7 @@ import { FaTwitter, FaLinkedin, FaLink } from 'react-icons/fa';
 function BlogPost() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const [showShareToast, setShowShareToast] = useState(false);
   const post = posts.find(p => p.id === id);
 
   if (!post) {
@@ -44,8 +45,6 @@ function BlogPost() {
       }
     }
   };
-
-  const [showShareToast, setShowShareToast] = useState(false);
   const currentUrl = `https://keshavrao.vercel.app/blog/${id}`;
   
   const shareLinks = {
@@ -124,7 +123,7 @@ function BlogPost() {
               />
             ),
             a: ({ node, ...props }) => (
-              <a {...props} target="_blank" rel="noopener noreferrer" />
+              <a {...props} target="_blank" rel="noopener noreferrer">{props.children}</a>
             )
           }}
         >
