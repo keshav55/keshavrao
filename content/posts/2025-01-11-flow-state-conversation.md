@@ -1,6 +1,6 @@
 ---
 title: "Flow State: A Conversation"
-date: 2025-01-11
+date: 2025-06
 description: "A raw conversation between me and Claude at 2am, with Archie Hamilton playing"
 author: "Keshav Rao"
 ---
