@@ -1,7 +1,7 @@
 // Blog posts data
 export const posts = [
   {
-    id: '2025-01-17-craft-work-vs-invisible-work',
+    id: 'craft-work-invisible-work',
     title: 'Craft Work vs Invisible Work',
     date: '2025-08',
     content: `It shouldn't take 20 messages to find a flow with AI.
@@ -15,7 +15,7 @@ Invisible work just needs to get done. Pull the emails. Search the codebase. For
 Craft work is different. There's no single right answer. Every decision shapes the outcome. If AI jumps to conclusions, I spend more time correcting than creating. This is why AI writing sounds soulless, why generated music feels empty, why no code platforms still require so much tweaking.`
   },
   {
-    id: '2025-06-flow-state',
+    id: '2am-flow',
     title: 'Flow State',
     date: '2025-06',
     content: `Long day, you're about to sleep, then you put on that minimal afters house set and something kicks in at this time of night. You're in this undefeatable flow state. I feel unrecognizable at these times. My brain doesn't feel scattered. Everything compounds. One task. Time disappears. Time expands. Beautiful feeling. Freeing feeling. Makes everything worth it.
