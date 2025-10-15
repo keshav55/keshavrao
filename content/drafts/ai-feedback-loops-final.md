@@ -5,15 +5,15 @@ description: "Why AI fails when it tries to do everything"
 author: "Keshav Rao"
 ---
 
-It shouldn't take 20 messages to find rhythm with AI.
+It shouldn't take 20 messages to get good output from AI.
 
-But that's the reality. Twenty messages to get output that satisfies you. By then you're drowning in context, the AI's making things up, and you're ready to cancel your subscription.
+Twenty messages to get output that satisfies you. By then you're drowning in context, the AI's making things up, and you're ready to cancel your subscription.
 
-The problem isn't the AI. It's that we're using one interface for two completely different types of work.
+We're using one interface for two completely different types of work.
 
 Invisible work just needs to get done. Pull the emails. Search the codebase. Format the document. Fast, accurate, no explanation needed. I don't want to watch or correct, just give me results.
 
-Craft work is different. There's no single right answer. Every decision shapes the outcome. If AI jumps to conclusions, I spend more time correcting than creating. This is why AI writing sounds soulless, why generated music feels empty, why no-code platforms still require so much tweaking.
+Craft work is different. There's no single right answer. Every decision shapes the outcome. If AI jumps to conclusions, I spend more time correcting than creating. AI writing sounds soulless, generated music feels empty, no-code platforms still require so much tweaking.
 
 We need AI that gets this. When it's invisible work, just disappear and handle it. When it's craft work, stop trying to finish everything for me.
 
