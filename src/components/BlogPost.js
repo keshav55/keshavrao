@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import { posts } from '../data/posts';
 import SEO from './SEO';
+import NotFound from './NotFound';
 import { FaTwitter, FaLinkedin, FaLink, FaHome } from 'react-icons/fa';
 
 function BlogPost() {
   const { id } = useParams();
-  const navigate = useNavigate();
   const [showShareToast, setShowShareToast] = useState(false);
   const post = posts.find(p => p.id === id);
 
   if (!post) {
-    navigate('/');
-    return null;
+    return <NotFound />;
   }
 
   // Calculate estimated reading time

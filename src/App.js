@@ -5,6 +5,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import Home from './pages/Home';
 import BlogPost from './components/BlogPost';
 import Daily from './pages/Daily';
+import NotFound from './components/NotFound';
 
 function App() {
   return (
@@ -14,8 +15,10 @@ function App() {
           <AnimatePresence mode="wait">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/about" element={<Home />} />
               <Route path="/blog/:id" element={<BlogPost />} />
               <Route path="/daily" element={<Daily />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </AnimatePresence>
         </div>

@@ -1,5 +1,16 @@
 const fs = require('fs');
-const { posts } = require('../data/posts');
+
+// Hardcoded posts data (matching src/data/posts.js)
+const posts = [
+  {
+    id: 'craft-work-invisible-work',
+    date: '2025-08',
+  },
+  {
+    id: '2am-flow',
+    date: '2025-06',
+  }
+];
 
 function generateSitemap() {
   const baseUrl = 'https://keshavrao.vercel.app';
@@ -10,11 +21,6 @@ function generateSitemap() {
     <loc>${baseUrl}</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>${baseUrl}/about</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>${baseUrl}/daily</loc>
@@ -33,7 +39,7 @@ function generateSitemap() {
 
   fs.writeFileSync('public/sitemap.xml', sitemap);
   console.log('✅ Sitemap generated successfully!');
+  console.log('📍 Location: public/sitemap.xml');
 }
 
-// Execute sitemap generation when run directly
 generateSitemap();

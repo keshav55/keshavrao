@@ -1,6 +1,6 @@
 ---
 title: "Craft Work vs Invisible Work"
-date: 2025-08
+date: 2025-09-19
 author: "Keshav Rao"
 ---
 
